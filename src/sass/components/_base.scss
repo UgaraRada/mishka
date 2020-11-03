@@ -1,20 +1,229 @@
-/**
- * @section Base Styles
- */
+
+ @font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url('../../../fonts/opensans.woff');
+}
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url('../../../fonts/opensans.woff2');
+}
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url('../../../fonts/opensansbold.woff');
+}
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url('../../../fonts/opensansbold.woff2');
+}
+
+//variables
+$black: #000000;
+$white: #ffffff;
+$grey: #444444;
+$light-grey: #ececec;
+$light-green: #63d1bb;
+$dark-green: #56c3b2;
+
+//mixins
+@mixin section__title {
+  color: $black;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+@mixin gren_uppercase_text {
+  color: $light-green;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@mixin text_form {
+  color: $black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+//common-styles
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1050px;
+  outline: 2px solid red;
+}
+
+.wrapper {
+  outline: 4px solid green;
+}
+
+.btn {
+  color: $grey;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
 body {
-	font-size: 125%;
+  position: relative;
+  min-width: 320px;
+  padding: 0;
 	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $grey;
 }
 
-input,
-textarea,
-select,
-button {
-	font: inherit;
+a {
+  color: $black;
+  text-decoration: none;
 }
-.page-header {
-  color: green;
+
+//page-header
+.main-nav__link {
+  font-weight: 700;
+  line-height: 24px;
 }
+
+.catalog-items__link {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+//topic
+
+.topic__title {
+  @include section__title();
+}
+
+.topic__links-item {
+  color: $white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  
+}
+
+.topic__links-item--left {
+  background-color: $light-green;
+}
+
+.topic__links-item--right {
+  background-color: $dark-green;
+}
+
+//product-week
+.product-week__title {
+  @include section__title();
+}
+
+.product-week__banner {
+  @include gren_uppercase_text();
+}
+
+.product-week__price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+//about-us
+.about-us__title {
+  @include section__title()
+}
+
+.about-us__list-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+//reviews
+.reviews__title {
+  @include section__title();
+
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+//contacts
+.contacts__title {
+  @include section__title();
+}
+
+.contacts__item-address address {
+  font-style: normal;
+}
+
+//page-footer 
+.page-footer__copyright {
+  color: $black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+//form
+//main-form__topic
+.form-topic__title  {
+  @include section__title();
+}
+
+//form-common
+.main-form legend {
+  @include gren_uppercase_text();
+}
+
+.data-input__type-label,
+.data-input__color-label,
+.data-input__full-name-label {
+  @include text_form();
+}
+
+.data-input__full-name,
+.data-input__phone,
+.data-input__e-mail,
+.data-input__wishes {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+//catalog 
+.catalog-products__item-descr-title,
+.production-process__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+//catalog-topic
+.catalog-topic__title {
+  @include section__title();
+}
+
+//catalog-products 
+
+.catalog-products__item-descr-features {
+  font-size: 15px;
+}
+
+.catalog-products__item-buy-price {
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+//production-process
+.production-process p {
+  font-size: 15px;
+}
+
+

@@ -1,24 +1,241 @@
 /*! mishka v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
-/**
- * @section Base Styles
- */
-/* line 5, src/sass/components/_base.scss */
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url("../../../fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url("../../../fonts/opensans.woff2");
+}
+
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url("../../../fonts/opensansbold.woff");
+}
+
+@font-face {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  src: url("../../../fonts/opensansbold.woff2");
+}
+
+/* line 49, src/sass/components/_base.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1050px;
+  outline: 2px solid red;
+}
+
+/* line 56, src/sass/components/_base.scss */
+.wrapper {
+  outline: 4px solid green;
+}
+
+/* line 60, src/sass/components/_base.scss */
+.btn {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* line 68, src/sass/components/_base.scss */
 body {
-  font-size: 125%;
+  position: relative;
+  min-width: 320px;
+  padding: 0;
   margin: 0 auto;
-  max-width: 42em;
-  width: 88%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
 }
 
-/* line 12, src/sass/components/_base.scss */
-input,
-textarea,
-select,
-button {
-  font: inherit;
+/* line 80, src/sass/components/_base.scss */
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
-/* line 18, src/sass/components/_base.scss */
-.page-header {
-  color: green;
+/* line 86, src/sass/components/_base.scss */
+.main-nav__link {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 91, src/sass/components/_base.scss */
+.catalog-items__link {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 99, src/sass/components/_base.scss */
+.topic__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 103, src/sass/components/_base.scss */
+.topic__links-item {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 111, src/sass/components/_base.scss */
+.topic__links-item--left {
+  background-color: #63d1bb;
+}
+
+/* line 115, src/sass/components/_base.scss */
+.topic__links-item--right {
+  background-color: #56c3b2;
+}
+
+/* line 120, src/sass/components/_base.scss */
+.product-week__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 124, src/sass/components/_base.scss */
+.product-week__banner {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* line 128, src/sass/components/_base.scss */
+.product-week__price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 135, src/sass/components/_base.scss */
+.about-us__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 139, src/sass/components/_base.scss */
+.about-us__list-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* line 146, src/sass/components/_base.scss */
+.reviews__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 151, src/sass/components/_base.scss */
+.reviews__author-name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 157, src/sass/components/_base.scss */
+.contacts__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 161, src/sass/components/_base.scss */
+.contacts__item-address address {
+  font-style: normal;
+}
+
+/* line 166, src/sass/components/_base.scss */
+.page-footer__copyright {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* line 175, src/sass/components/_base.scss */
+.form-topic__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 180, src/sass/components/_base.scss */
+.main-form legend {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* line 184, src/sass/components/_base.scss */
+.data-input__type-label,
+.data-input__color-label,
+.data-input__full-name-label {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* line 190, src/sass/components/_base.scss */
+.data-input__full-name,
+.data-input__phone,
+.data-input__e-mail,
+.data-input__wishes {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+/* line 199, src/sass/components/_base.scss */
+.catalog-products__item-descr-title,
+.production-process__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* line 208, src/sass/components/_base.scss */
+.catalog-topic__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 214, src/sass/components/_base.scss */
+.catalog-products__item-descr-features {
+  font-size: 15px;
+}
+
+/* line 218, src/sass/components/_base.scss */
+.catalog-products__item-buy-price {
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* line 225, src/sass/components/_base.scss */
+.production-process p {
+  font-size: 15px;
 }
