@@ -60,19 +60,26 @@ a {
   text-decoration: none;
 }
 
-/* line 86, src/sass/components/_base.scss */
+/* line 87, src/sass/components/_base.scss */
 .main-nav__link {
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 91, src/sass/components/_base.scss */
+/* line 92, src/sass/components/_base.scss */
 .catalog-items__link {
   font-weight: 700;
   line-height: 24px;
 }
 
 /* line 99, src/sass/components/_base.scss */
+.topic {
+  background-image: url("../../imgs/hero-desktop1x.jpg");
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+/* line 104, src/sass/components/_base.scss */
 .topic__title {
   color: #000000;
   font-weight: 700;
@@ -80,7 +87,7 @@ a {
   line-height: 57px;
 }
 
-/* line 103, src/sass/components/_base.scss */
+/* line 108, src/sass/components/_base.scss */
 .topic__links-item {
   color: #ffffff;
   font-weight: 700;
@@ -88,17 +95,17 @@ a {
   line-height: 30px;
 }
 
-/* line 111, src/sass/components/_base.scss */
+/* line 116, src/sass/components/_base.scss */
 .topic__links-item--left {
   background-color: #63d1bb;
 }
 
-/* line 115, src/sass/components/_base.scss */
+/* line 120, src/sass/components/_base.scss */
 .topic__links-item--right {
   background-color: #56c3b2;
 }
 
-/* line 120, src/sass/components/_base.scss */
+/* line 125, src/sass/components/_base.scss */
 .product-week__title {
   color: #000000;
   font-weight: 700;
@@ -106,7 +113,7 @@ a {
   line-height: 57px;
 }
 
-/* line 124, src/sass/components/_base.scss */
+/* line 129, src/sass/components/_base.scss */
 .product-week__banner {
   color: #63d1bb;
   text-transform: uppercase;
@@ -114,14 +121,14 @@ a {
   font-weight: 700;
 }
 
-/* line 128, src/sass/components/_base.scss */
+/* line 133, src/sass/components/_base.scss */
 .product-week__price {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 135, src/sass/components/_base.scss */
+/* line 140, src/sass/components/_base.scss */
 .about-us__title {
   color: #000000;
   font-weight: 700;
@@ -129,14 +136,14 @@ a {
   line-height: 57px;
 }
 
-/* line 139, src/sass/components/_base.scss */
+/* line 144, src/sass/components/_base.scss */
 .about-us__list-item {
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;
 }
 
-/* line 146, src/sass/components/_base.scss */
+/* line 151, src/sass/components/_base.scss */
 .reviews__title {
   color: #000000;
   font-weight: 700;
@@ -144,13 +151,13 @@ a {
   line-height: 57px;
 }
 
-/* line 151, src/sass/components/_base.scss */
+/* line 156, src/sass/components/_base.scss */
 .reviews__author-name {
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 157, src/sass/components/_base.scss */
+/* line 162, src/sass/components/_base.scss */
 .contacts__title {
   color: #000000;
   font-weight: 700;
@@ -158,12 +165,12 @@ a {
   line-height: 57px;
 }
 
-/* line 161, src/sass/components/_base.scss */
+/* line 166, src/sass/components/_base.scss */
 .contacts__item-address address {
   font-style: normal;
 }
 
-/* line 166, src/sass/components/_base.scss */
+/* line 171, src/sass/components/_base.scss */
 .page-footer__copyright {
   color: #000000;
   font-size: 19px;
@@ -171,7 +178,7 @@ a {
   line-height: 18px;
 }
 
-/* line 175, src/sass/components/_base.scss */
+/* line 180, src/sass/components/_base.scss */
 .form-topic__title {
   color: #000000;
   font-weight: 700;
@@ -179,7 +186,7 @@ a {
   line-height: 57px;
 }
 
-/* line 180, src/sass/components/_base.scss */
+/* line 185, src/sass/components/_base.scss */
 .main-form legend {
   color: #63d1bb;
   text-transform: uppercase;
@@ -187,7 +194,7 @@ a {
   font-weight: 700;
 }
 
-/* line 184, src/sass/components/_base.scss */
+/* line 189, src/sass/components/_base.scss */
 .data-input__type-label,
 .data-input__color-label,
 .data-input__full-name-label {
@@ -197,7 +204,7 @@ a {
   line-height: 18px;
 }
 
-/* line 190, src/sass/components/_base.scss */
+/* line 195, src/sass/components/_base.scss */
 .data-input__full-name,
 .data-input__phone,
 .data-input__e-mail,
@@ -206,7 +213,7 @@ a {
   line-height: 18px;
 }
 
-/* line 199, src/sass/components/_base.scss */
+/* line 204, src/sass/components/_base.scss */
 .catalog-products__item-descr-title,
 .production-process__title {
   font-size: 20px;
@@ -215,7 +222,7 @@ a {
   color: #000000;
 }
 
-/* line 208, src/sass/components/_base.scss */
+/* line 213, src/sass/components/_base.scss */
 .catalog-topic__title {
   color: #000000;
   font-weight: 700;
@@ -223,19 +230,19 @@ a {
   line-height: 57px;
 }
 
-/* line 214, src/sass/components/_base.scss */
+/* line 219, src/sass/components/_base.scss */
 .catalog-products__item-descr-features {
   font-size: 15px;
 }
 
-/* line 218, src/sass/components/_base.scss */
+/* line 223, src/sass/components/_base.scss */
 .catalog-products__item-buy-price {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
 }
 
-/* line 225, src/sass/components/_base.scss */
+/* line 230, src/sass/components/_base.scss */
 .production-process p {
   font-size: 15px;
 }

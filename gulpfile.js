@@ -10,7 +10,8 @@ var settings = {
 	styles: true,
 	svgs: true,
 	copy: true,
-	reload: true
+  reload: true,
+  imgs: true
 };
 
 
@@ -37,6 +38,10 @@ var paths = {
 	copy: {
 		input: 'src/copy/**/*',
 		output: 'dist/'
+  },
+  imgs: {
+		input: 'src/imgs/**/*',
+		output: 'dist/imgs/'
 	},
 	reload: './dist/'
 };
@@ -62,7 +67,7 @@ var banner = {
  */
 
 // General
-var {gulp, src, dest, watch, series, parallel} = require('gulp');
+var {gulp, src, dest, watch, series, parallel, tree} = require('gulp');
 var del = require('del');
 var flatmap = require('gulp-flatmap');
 var lazypipe = require('lazypipe');
@@ -237,6 +242,17 @@ var copyFiles = function (done) {
 
 };
 
+var copyImgs = function (done) {
+
+	// Make sure this feature is activated before running
+	if (!settings.imgs) return done();
+
+	// Copy static files
+	return src(paths.imgs.input)
+		.pipe(dest(paths.imgs.output));
+
+};
+
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -282,7 +298,8 @@ exports.default = series(
 		lintScripts,
 		buildStyles,
 		buildSVGs,
-		copyFiles
+    copyFiles,
+    copyImgs
 	)
 );
 
@@ -293,3 +310,6 @@ exports.watch = series(
 	startServer,
 	watchSource
 );
+
+
+

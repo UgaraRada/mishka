@@ -81,6 +81,7 @@ a {
   color: $black;
   text-decoration: none;
 }
+//index
 
 //page-header
 .main-nav__link {
@@ -95,7 +96,11 @@ a {
 
 
 //topic
-
+.topic {
+  background-image: url("../../imgs/hero-desktop1x.jpg");
+  background-repeat: no-repeat;
+  height: 1000px;
+}
 .topic__title {
   @include section__title();
 }
