@@ -1,0 +1,20 @@
+@mixin section__title {
+  color: $black;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+@mixin gren_uppercase_text {
+  color: $light-green;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@mixin text_form {
+  color: $black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}

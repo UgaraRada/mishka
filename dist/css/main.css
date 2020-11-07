@@ -19,29 +19,19 @@
   src: url("../../../fonts/opensansbold.woff2");
 }
 
-/* line 49, src/sass/components/_base.scss */
+/* line 1, src/sass/components/_common_styles.scss */
 .container {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   width: 1050px;
   outline: 2px solid red;
 }
 
-/* line 56, src/sass/components/_base.scss */
+/* line 7, src/sass/components/_common_styles.scss */
 .wrapper {
   outline: 4px solid green;
 }
 
-/* line 60, src/sass/components/_base.scss */
-.btn {
-  color: #444444;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-/* line 68, src/sass/components/_base.scss */
+/* line 11, src/sass/components/_common_styles.scss */
 body {
   position: relative;
   min-width: 320px;
@@ -54,123 +44,24 @@ body {
   color: #444444;
 }
 
-/* line 80, src/sass/components/_base.scss */
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-/* line 87, src/sass/components/_base.scss */
+/* line 24, src/sass/components/_common_styles.scss */
 .main-nav__link {
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 92, src/sass/components/_base.scss */
+/* line 29, src/sass/components/_common_styles.scss */
 .catalog-items__link {
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 99, src/sass/components/_base.scss */
-.topic {
-  background-image: url("../../imgs/hero-desktop1x.jpg");
-  background-repeat: no-repeat;
-  height: 1000px;
+/* line 35, src/sass/components/_common_styles.scss */
+.page-footer {
+  background-color: #f1f1f1;
 }
 
-/* line 104, src/sass/components/_base.scss */
-.topic__title {
-  color: #000000;
-  font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
-}
-
-/* line 108, src/sass/components/_base.scss */
-.topic__links-item {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-/* line 116, src/sass/components/_base.scss */
-.topic__links-item--left {
-  background-color: #63d1bb;
-}
-
-/* line 120, src/sass/components/_base.scss */
-.topic__links-item--right {
-  background-color: #56c3b2;
-}
-
-/* line 125, src/sass/components/_base.scss */
-.product-week__title {
-  color: #000000;
-  font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
-}
-
-/* line 129, src/sass/components/_base.scss */
-.product-week__banner {
-  color: #63d1bb;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-/* line 133, src/sass/components/_base.scss */
-.product-week__price {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-/* line 140, src/sass/components/_base.scss */
-.about-us__title {
-  color: #000000;
-  font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
-}
-
-/* line 144, src/sass/components/_base.scss */
-.about-us__list-item {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22px;
-}
-
-/* line 151, src/sass/components/_base.scss */
-.reviews__title {
-  color: #000000;
-  font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
-}
-
-/* line 156, src/sass/components/_base.scss */
-.reviews__author-name {
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* line 162, src/sass/components/_base.scss */
-.contacts__title {
-  color: #000000;
-  font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
-}
-
-/* line 166, src/sass/components/_base.scss */
-.contacts__item-address address {
-  font-style: normal;
-}
-
-/* line 171, src/sass/components/_base.scss */
+/* line 38, src/sass/components/_common_styles.scss */
 .page-footer__copyright {
   color: #000000;
   font-size: 19px;
@@ -178,7 +69,172 @@ a {
   line-height: 18px;
 }
 
-/* line 180, src/sass/components/_base.scss */
+/* line 45, src/sass/components/_common_styles.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 50, src/sass/components/_common_styles.scss */
+.btn {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* line 1, src/sass/components/_index.scss */
+.index__wrapper {
+  outline: 4px solid green;
+}
+
+/* line 5, src/sass/components/_index.scss */
+.topic {
+  background-color: #f9f9f9;
+}
+
+/* line 8, src/sass/components/_index.scss */
+.topic::after {
+  display: block;
+  width: 100%;
+  background-image: url("../../imgs/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  height: 23px;
+}
+
+/* line 16, src/sass/components/_index.scss */
+.topic__box {
+  background-image: url("../../imgs/hero-desktop1x.jpg");
+  min-height: 756px;
+}
+
+/* line 20, src/sass/components/_index.scss */
+.topic__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 24, src/sass/components/_index.scss */
+.topic__links-item {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 32, src/sass/components/_index.scss */
+.topic__links-item--left {
+  background-color: #63d1bb;
+}
+
+/* line 36, src/sass/components/_index.scss */
+.topic__links-item--right {
+  background-color: #56c3b2;
+}
+
+/* line 41, src/sass/components/_index.scss */
+.product-week__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 45, src/sass/components/_index.scss */
+.product-week__banner {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* line 49, src/sass/components/_index.scss */
+.product-week__price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 56, src/sass/components/_index.scss */
+.about-us__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 60, src/sass/components/_index.scss */
+.about-us__list-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* line 67, src/sass/components/_index.scss */
+.reviews {
+  position: relative;
+}
+
+/* line 69, src/sass/components/_index.scss */
+.reviews:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 350px;
+  height: 457px;
+  background-image: url("../../imgs/review@1x.jpg");
+  background-size: 350px auto;
+  z-index: -1;
+}
+
+/* line 82, src/sass/components/_index.scss */
+.reviews__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 87, src/sass/components/_index.scss */
+.reviews__author-name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 93, src/sass/components/_index.scss */
+.contacts__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+/* line 97, src/sass/components/_index.scss */
+.contacts__item-address address {
+  font-style: normal;
+}
+
+/* line 1, src/sass/components/_form.scss */
+form fieldset:nth-child(2) {
+  background-color: #f1f1f1;
+}
+
+/* line 4, src/sass/components/_form.scss */
+.data-input__phone-label {
+  background-color: #f1f1f1;
+}
+
+/* line 8, src/sass/components/_form.scss */
+.main-form__topic {
+  background-color: #f1f1f1;
+}
+
+/* line 11, src/sass/components/_form.scss */
 .form-topic__title {
   color: #000000;
   font-weight: 700;
@@ -186,7 +242,7 @@ a {
   line-height: 57px;
 }
 
-/* line 185, src/sass/components/_base.scss */
+/* line 16, src/sass/components/_form.scss */
 .main-form legend {
   color: #63d1bb;
   text-transform: uppercase;
@@ -194,7 +250,7 @@ a {
   font-weight: 700;
 }
 
-/* line 189, src/sass/components/_base.scss */
+/* line 20, src/sass/components/_form.scss */
 .data-input__type-label,
 .data-input__color-label,
 .data-input__full-name-label {
@@ -204,7 +260,7 @@ a {
   line-height: 18px;
 }
 
-/* line 195, src/sass/components/_base.scss */
+/* line 26, src/sass/components/_form.scss */
 .data-input__full-name,
 .data-input__phone,
 .data-input__e-mail,
@@ -213,7 +269,7 @@ a {
   line-height: 18px;
 }
 
-/* line 204, src/sass/components/_base.scss */
+/* line 1, src/sass/components/_catalog.scss */
 .catalog-products__item-descr-title,
 .production-process__title {
   font-size: 20px;
@@ -222,7 +278,12 @@ a {
   color: #000000;
 }
 
-/* line 213, src/sass/components/_base.scss */
+/* line 10, src/sass/components/_catalog.scss */
+.catalog-topic {
+  background-color: #f1f1f1;
+}
+
+/* line 13, src/sass/components/_catalog.scss */
 .catalog-topic__title {
   color: #000000;
   font-weight: 700;
@@ -230,19 +291,19 @@ a {
   line-height: 57px;
 }
 
-/* line 219, src/sass/components/_base.scss */
+/* line 19, src/sass/components/_catalog.scss */
 .catalog-products__item-descr-features {
   font-size: 15px;
 }
 
-/* line 223, src/sass/components/_base.scss */
+/* line 23, src/sass/components/_catalog.scss */
 .catalog-products__item-buy-price {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
 }
 
-/* line 230, src/sass/components/_base.scss */
+/* line 30, src/sass/components/_catalog.scss */
 .production-process p {
   font-size: 15px;
 }

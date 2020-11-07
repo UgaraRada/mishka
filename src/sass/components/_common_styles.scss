@@ -1,0 +1,59 @@
+.container {
+  margin: 0 auto;
+  width: 1050px;
+  outline: 2px solid red;
+}
+
+.wrapper {
+  outline: 4px solid green;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  padding: 0;
+	margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $grey;
+}
+
+//page-header
+.main-nav__link {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog-items__link {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+//page-footer 
+.page-footer {
+  background-color: $background-block;
+}
+.page-footer__copyright {
+  color: $black;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+.btn {
+  color: $grey;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+

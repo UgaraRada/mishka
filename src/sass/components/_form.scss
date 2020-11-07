@@ -1,0 +1,32 @@
+form fieldset:nth-child(2) {
+  background-color: $background-block;
+}
+.data-input__phone-label {
+  background-color: $background-block;
+}
+//main-form__topic
+.main-form__topic {
+  background-color: $background-block;
+}
+.form-topic__title  {
+  @include section__title();
+}
+
+//form-common
+.main-form legend {
+  @include gren_uppercase_text();
+}
+
+.data-input__type-label,
+.data-input__color-label,
+.data-input__full-name-label {
+  @include text_form();
+}
+
+.data-input__full-name,
+.data-input__phone,
+.data-input__e-mail,
+.data-input__wishes {
+  font-size: 19px;
+  line-height: 18px;
+}

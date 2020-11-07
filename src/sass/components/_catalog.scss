@@ -1,0 +1,32 @@
+.catalog-products__item-descr-title,
+.production-process__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+//catalog-topic
+.catalog-topic {
+  background-color: $background-block;
+}
+.catalog-topic__title {
+  @include section__title();
+}
+
+//catalog-products 
+
+.catalog-products__item-descr-features {
+  font-size: 15px;
+}
+
+.catalog-products__item-buy-price {
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+//production-process
+.production-process p {
+  font-size: 15px;
+}
