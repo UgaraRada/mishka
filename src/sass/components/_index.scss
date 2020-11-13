@@ -6,13 +6,16 @@
   background-color: #f9f9f9;
 
   &::after {
+    content: "";
     display: block;
     width: 100%;
-    background-image: url("../../imgs/bg-zigzag-line.svg");
+    background-image: url("../../imgs/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     height: 23px;
+    z-index: 10;
   }
 }
+
 .topic__box {
   background-image: url("../../imgs/hero-desktop1x.jpg");
   min-height: 756px;
