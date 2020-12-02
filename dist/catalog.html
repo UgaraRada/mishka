@@ -10,56 +10,52 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo disabled" href="#">
-        <img src="http://placehold.it" alt="mishka">
-      </a>
-      <nav class="main-nav ">
-        <div class="main-nav__toggler">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                Каталог товаров
-              </a>
-              <ul class="catalog-items">
-                <li>
-                  <a class="catalog-items__link" href="#">
-                    Новые поступления
-                  </a>
-                </li>
-                <li>
-                  <a class="catalog-items__link" href="#">
-                    Распродажа
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <button type="button" class="btn-search">
-                Поиск по сайту
-              </button>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
+  <div class="container">
+    <header class="page-header">
+      <a class="page-header__logo disabled" href="#"></a>
+      <nav class="main-nav">
+        <input type="checkbox" class="main-nav__toggler" />
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <button type="button" class="btn-search">
+              Поиск по сайту
+            </button>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
       </nav>
-      <p class="page-header__promo-info">Бесплатная доставка по России</p>
-    </div>
-  </header>
+      <ul class="additional-nav">
+        <li class="additional-nav__item">
+          <a class="additional-nav__link" href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="additional-nav__item">
+          <a class="additional-nav__link" href="#">
+            Распродажа
+          </a>
+        </li>
+        <li class="additional-nav__item">
+          <p class="additional-nav__promo-info">Бесплатная доставка по России</p>
+        </li>
+      </ul>
+    </header>
+  </div>
+
 
   <main class="main-catalog">
     <section class="catalog-topic">
@@ -71,70 +67,88 @@
     </section>
     <div class="container">
       <section class="catalog-products">
-        <div class="catalog-products__item">
-          <img src="../../img/photo-1-desktop@1x.jpg" width="316" height="462">          
-          <div class="catalog-products__descr">
-            <h2 class="catalog-products__item-descr-title">Зайчик-попрыгайчик</h2>
-            <p class="catalog-products__item-descr-features">Рост 30 см, вес 200г</p>
+        <div class="catalog__wrapper catalog-products-wrapper">
+          <div class="catalog-products__item">
+            <img class="catalog-products__item-picture catalog-products__item-picture--1">
+            <div class="catalog-products__item-descr">
+              <h2 class="catalog-products__item-descr-title">Зайчик-попрыгайчик</h2>
+              <p class="catalog-products__item-descr-features">Рост 30 см, вес 200г</p>
+              <div class="catalog-products__item-buy">
+                <p class="catalog-products__item-buy-price">1 200 руб.</p>
+                <button type="submit" class="catalog-products__item-buy-basket btn-basket">
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="catalog-products__item-buy">
-            <p class="catalog-products__item-buy-price">1 200 руб.</p>
-            <button type="submit" class="catalog-products__item-buy-basket btn-basket">              
-            </button>
+          <div class="catalog-products__item">
+            <img class="catalog-products__item-picture catalog-products__item-picture--2">
+            <div class="catalog-products__item-descr">
+              <h2 class="catalog-products__item-descr-title">Корзинка для белья</h2>
+              <p class="catalog-products__item-descr-features">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog-products__item-buy">
+                <p class="catalog-products__item-buy-price">690 руб.</p>
+                <button type="submit" class="catalog-products__item-buy-basket btn-basket">
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="catalog-products__item">
-          <img src="../../img/photo-2-desktop@1x.jpg" width="316" height="462">
-          <div class="catalog-products__item-descr">
-            <h2 class="catalog-products__item-descr-title">Корзинка для белья</h2>
-            <p class="catalog-products__item-descr-features">Диаметр 15 см, высота 10 см</p>
-          </div>
-          <div class="catalog-products__item-buy">
-            <p class="catalog-products__item-buy-price">690 руб.</p>
-            <button type="submit" class="catalog-products__item-buy-basket btn-basket">
-            </button>
-          </div>
-        </div>
-        <div class="catalog-products__item">
-          <img src="../../img/photo_rabbit.jpg" width="316" height="462">
-          <div class="catalog-products__item-descr">
-            <h2 class="catalog-products__item-descr-title">Большая корзинка для игрушек</h2>
-            <p class="catalog-products__item-descr-features">Диаметр 30 см, высота 30 см</p>
-          </div>
-          <div class="catalog-products__item-buy">
-            <p class="catalog-products__item-buy-price">1 500 руб.</p>
-            <button type="submit" class="catalog-products__item-buy-basket btn-basket">
-            </button>
+          <div class="catalog-products__item">
+            <img class="catalog-products__item-picture catalog-products__item-picture--3">
+            <div class="catalog-products__item-descr">
+              <h2 class="catalog-products__item-descr-title">Большая корзинка для игрушек</h2>
+              <p class="catalog-products__item-descr-features">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog-products__item-buy">
+                <p class="catalog-products__item-buy-price">1 500 руб.</p>
+                <button type="submit" class="catalog-products__item-buy-basket btn-basket">
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" src="#"></video>
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары</p>
-        <a class="production-process__order btn">Сделать заказ</a>
+        <div class="catalog__wrapper production-process-wrapper">
+          <h2 class="production-process__title">Процесс производства</h2>
+          <video class="production-process__video" src="#"></video>
+          <div class="production-process__descr">
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+              как появляются наши товары</p>
+            <a class="production-process__order btn" href="#">Сделать заказ</a>
+          </div>
+        </div>
       </section>
     </div>
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="container footer__container">
       <a class="page-footer__logo" href="#">
-        <img src="http://placehold.it" alt="mishka">
+        <img src="../imgs/logo-footer.svg" width="102" height="34" alt="mishka">
       </a>
       <div class="social-links">
-        <a class="social-link social-link--in" href="#">Наш Instagram</a>
-        <a class="social-link social-link--fb" href="#">Наш Facebook</a>
-        <a class="social-link social-link--tw" href="#">Наш Twitter</a>
+        <a class="social-link" href="#">
+          <img class="social-link--in" src="../imgs/icon-insta.svg" width="22" height="21"
+           alt="Наш Instagram">
+        </a>
+        <a class="social-link" href="#">
+          <img class="social-link--fb" src="../imgs/icon-fb.svg" width="15" height="29"
+           alt="Наш Facebook">
+        </a>
+        <a class="social-link" href="#">
+          <img class="social-link--tw" src="../imgs/icon-twitter.svg" width="24" height="20"
+           alt="Наш Twitter">
+        </a>
       </div>
       <div class="page-footer__copyright">
-        Разработано
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">htmlacademy</a>
+        <span>Разработано</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+          <img src="../imgs/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          </a>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>

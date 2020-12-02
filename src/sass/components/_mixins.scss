@@ -1,11 +1,16 @@
 @mixin section__title {
   color: $black;
   font-weight: 700;
-  font-size: 53px;
-  line-height: 57px;
+  font-size: 25px;
   margin: 0;
 }
 
+@mixin section__title__desktop {
+  color: $black;
+  font-weight: 700;
+  font-size: 53px;
+  margin: 0;
+}
 @mixin gren_uppercase_text {
   color: $light-green;
   text-transform: uppercase;
@@ -15,7 +20,7 @@
 
 @mixin text_form {
   color: $black;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 }
@@ -23,12 +28,32 @@
 @mixin adaptive() {
   min-width: 320px;
   margin: 0 auto;
-    // @media #{$tablet-width} {
-    //   width: 640px;
-    // }
+    
     @media #{$desktop-width} {
       min-width: 1050px;
       font-size: 17px;
       line-height: 30px;
     }
+
+    @media #{$mobile-width-only} {
+      max-width: 959  px;
+    }
+}
+
+@mixin icon_about_us() {
+  &:before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin catalog_block_title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
 }

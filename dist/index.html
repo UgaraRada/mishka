@@ -14,12 +14,7 @@
     <header class="page-header">
       <a class="page-header__logo disabled" href="#"></a>
       <nav class="main-nav">
-        <div class="main-nav__toggler">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <input type="checkbox" class="main-nav__toggler" />
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">
@@ -69,17 +64,16 @@
         </h2>
         <nav class="topic__links">
           <a class="topic__links-item topic__links-item--left" href="#">
-            Предметы итерьера
+            Предметы<br> итерьера
           </a>
           <a class="topic__links-item topic__links-item--right" href="#">
-            Детские игрушки
+            Детские<br> игрушки
           </a>
         </nav>
       </div>
     </section>
-    <div class="container">
-      <section class="product-week">
-        <div class="index__wrapper">
+      <section class="container product-week">
+        <div class="index__wrapper index__wrapper--product-week">
           <h2 class="product-week__title">
             Вязаные корзинки
           </h2>
@@ -102,35 +96,36 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img src="http://placehold.it">
+          <div class="product-week__img"></div>
           <p class="product-week__price">Цена: 990 руб.</p>
           <a class="product-week__order btn" href="#">Заказать</a>
         </div>
       </section>
-      <section class="about-us">
+      <!-- </div> -->
+      <section class="container about-us">
         <div class="index__wrapper">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--1">
               Экологически чистые материалы</li>
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--2">
               Скандинавский стиль по российской цене</li>
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--3">
               Увеличивает лайки на фотографиях
             </li>
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--4">
               Связано вручную с любовью и умилением
             </li>
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--5">
               Поддержка отечественного производителя
             </li>
-            <li class="about-us__list-item">
+            <li class="about-us__list-item about-us__list-item--6">
               Поставляется в подарочной упаковке
             </li>
           </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section class="container reviews">
         <div class="index__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__slider">
@@ -151,12 +146,12 @@
           <a class="reviews__write btn" href="#">Написать</a>
         </div>
       </section>
-      <section class="contacts">
-        <div class="index__wrapper">
+      <section class="container contacts">
+        <div class="index__wrapper index__wrapper--contacts">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__item-email">
             e-mail:
-            <a class="contacts__item-email--link" href="mailto:info@mimimishkashop.ru">
+            <a class="contacts__item-email-link" href="mailto:info@mimimishkashop.ru">
               info@mimimishkashop.ru
             </a>
           </div>
@@ -168,25 +163,37 @@
           <a class="contacts__write btn" href="#">Напишите нам</a>
         </div>
       </section>
-    </div>
+    
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <a class="page-footer__logo disabled" href="#">
-        <img src="../../img/logo-footer.svg" alt="mishka" width="102" height="34">
+    <div class="container footer__container">
+      <a class="page-footer__logo" href="#">
+        <img src="../imgs/logo-footer.svg" width="102" height="34" alt="mishka">
       </a>
       <div class="social-links">
-        <a class="social-link social-link--in" href="#">Наш Instagram</a>
-        <a class="social-link social-link--fb" href="#">Наш Facebook</a>
-        <a class="social-link social-link--tw" href="#">Наш Twitter</a>
+        <a class="social-link" href="#">
+          <img class="social-link--in" src="../imgs/icon-insta.svg" width="22" height="21"
+           alt="Наш Instagram">
+        </a>
+        <a class="social-link" href="#">
+          <img class="social-link--fb" src="../imgs/icon-fb.svg" width="15" height="29"
+           alt="Наш Facebook">
+        </a>
+        <a class="social-link" href="#">
+          <img class="social-link--tw" src="../imgs/icon-twitter.svg" width="24" height="20"
+           alt="Наш Twitter">
+        </a>
       </div>
       <div class="page-footer__copyright">
-        Разработано
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">htmlacademy</a>
+        <span>Разработано</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+          <img src="../imgs/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          </a>
       </div>
     </div>
   </footer>
+  
 </body>
 
 </html>

@@ -1,20 +1,106 @@
-form fieldset:nth-child(2) {
-  background-color: $background-block;
-}
-.data-input__phone-label {
-  background-color: $background-block;
-}
-//main-form__topic
-.main-form__topic {
-  background-color: $background-block;
-}
-.form-topic__title  {
-  @include section__title();
+.form__wrapper {
+  outline: 4px solid green;
+  width: 260px;
+  margin: 0 auto;
 }
 
+@media #{$desktop-width} {
+  .form__wrapper {
+    outline: none;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+
+//form__topic
+.form-topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  background-color: $background-block;
+  margin-bottom: 30px;
+}
+.form-topic__title {
+  @include section__title();
+  font-size: 27px;
+  text-align: center;
+}
+
+@media #{$desktop-width} {
+  .form-topic {
+    position: relative;
+    min-height: 255px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-image: url(../../imgs/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      height: 23px;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+  
+  .form-topic__title {
+    @include section__title__desktop();
+  }
+}
+
+//main-form__instruction
+.main-form__instruction {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+@media #{$desktop-width} {
+  
+}
+
+
+//data-input__type 
+.data-input__type-label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 40px;
+  margin-left: 62px;
+  cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $black;
+      border-radius: 40px;
+    
+  }
+  }
 //form-common
+.main-form__input-data {
+  border: none;
+}
+
+.main-form__input-data legend {
+  // margin-bottom: 25px;
+}
 .main-form legend {
   @include gren_uppercase_text();
+}
+.main-form__input-data label {
+  
+} 
+
+.data-input__type,
+.data-input__color {
+  display: none;
 }
 
 .data-input__type-label,
@@ -30,3 +116,7 @@ form fieldset:nth-child(2) {
   font-size: 19px;
   line-height: 18px;
 }
+
+
+
+
