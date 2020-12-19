@@ -945,18 +945,89 @@ a {
   outline: 4px solid green;
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 960px) {
-  /* line 8, src/sass/components/_form.scss */
+  /* line 9, src/sass/components/_form.scss */
   .form__wrapper {
-    outline: none;
-    width: 100%;
-    margin: auto;
+    position: relative;
+    width: 770px;
+    margin-left: 175px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
-/* line 17, src/sass/components/_form.scss */
+/* line 20, src/sass/components/_form.scss */
+.main-form__input-data {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 29, src/sass/components/_form.scss */
+.main-form legend {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+/* line 33, src/sass/components/_form.scss */
+.main-form legend::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #56c3b2;
+  width: 198px;
+  height: 1px;
+  top: 12px;
+  right: 0;
+}
+
+@media (min-width: 960px) {
+  /* line 29, src/sass/components/_form.scss */
+  .main-form legend {
+    position: absolute;
+    left: -115px;
+    top: 60px;
+  }
+  /* line 48, src/sass/components/_form.scss */
+  .main-form legend::after {
+    display: none;
+  }
+}
+
+/* line 54, src/sass/components/_form.scss */
+.data-input__type,
+.data-input__color {
+  display: none;
+}
+
+/* line 59, src/sass/components/_form.scss */
+.data-input__type-label,
+.data-input__color-label,
+.data-input__full-name-label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* line 65, src/sass/components/_form.scss */
+.data-input__full-name,
+.data-input__phone,
+.data-input__e-mail,
+.data-input__wishes {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+/* line 75, src/sass/components/_form.scss */
 .form-topic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,7 +1043,7 @@ a {
   margin-bottom: 30px;
 }
 
-/* line 25, src/sass/components/_form.scss */
+/* line 83, src/sass/components/_form.scss */
 .form-topic__title {
   color: #000000;
   font-weight: 700;
@@ -983,12 +1054,12 @@ a {
 }
 
 @media (min-width: 960px) {
-  /* line 32, src/sass/components/_form.scss */
+  /* line 90, src/sass/components/_form.scss */
   .form-topic {
     position: relative;
     min-height: 255px;
   }
-  /* line 35, src/sass/components/_form.scss */
+  /* line 93, src/sass/components/_form.scss */
   .form-topic::after {
     content: "";
     display: block;
@@ -1000,7 +1071,7 @@ a {
     bottom: 0;
     z-index: 10;
   }
-  /* line 48, src/sass/components/_form.scss */
+  /* line 106, src/sass/components/_form.scss */
   .form-topic__title {
     color: #000000;
     font-weight: 700;
@@ -1009,13 +1080,22 @@ a {
   }
 }
 
-/* line 54, src/sass/components/_form.scss */
+/* line 112, src/sass/components/_form.scss */
 .main-form__instruction {
   font-size: 13px;
   margin-bottom: 30px;
 }
 
-/* line 65, src/sass/components/_form.scss */
+@media (min-width: 960px) {
+  /* line 118, src/sass/components/_form.scss */
+  .main-form__instruction {
+    display: block;
+    width: 700px;
+    font-size: 17px;
+  }
+}
+
+/* line 127, src/sass/components/_form.scss */
 .data-input__type-label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,58 +1109,149 @@ a {
   cursor: pointer;
 }
 
-/* line 72, src/sass/components/_form.scss */
+/* line 134, src/sass/components/_form.scss */
 .data-input__type-label:not(:last-child) {
   margin-bottom: 24px;
 }
 
-/* line 75, src/sass/components/_form.scss */
+/* line 137, src/sass/components/_form.scss */
 .data-input__type-label::before {
   content: "";
   position: absolute;
   display: block;
   width: 40px;
   height: 40px;
-  border: 1px solid #000000;
-  border-radius: 40px;
+  border: 2px solid #000000;
+  border-radius: 100px;
+  left: -63px;
 }
 
-/* line 87, src/sass/components/_form.scss */
-.main-form__input-data {
-  border: none;
-}
-
-/* line 94, src/sass/components/_form.scss */
-.main-form legend {
-  color: #63d1bb;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-/* line 101, src/sass/components/_form.scss */
-.data-input__type,
-.data-input__color {
+/* line 147, src/sass/components/_form.scss */
+.data-input__type-label::after {
+  content: "";
   display: none;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #56c3b2;
+  border-radius: 100px;
+  left: -50px;
 }
 
-/* line 106, src/sass/components/_form.scss */
-.data-input__type-label,
-.data-input__color-label,
-.data-input__full-name-label {
-  color: #000000;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
+/* line 158, src/sass/components/_form.scss */
+.data-input__type:checked + .data-input__type-label::after {
+  display: block;
 }
 
-/* line 112, src/sass/components/_form.scss */
-.data-input__full-name,
-.data-input__phone,
-.data-input__e-mail,
-.data-input__wishes {
-  font-size: 19px;
-  line-height: 18px;
+@media (min-width: 960px) {
+  /* line 163, src/sass/components/_form.scss */
+  .data-input__type-label {
+    height: 54px;
+    font-size: 19px;
+    margin-left: 81px;
+  }
+  /* line 168, src/sass/components/_form.scss */
+  .data-input__type-label::before {
+    width: 50px;
+    height: 50px;
+    left: -83px;
+  }
+  /* line 173, src/sass/components/_form.scss */
+  .data-input__type-label::after {
+    width: 21px;
+    height: 21px;
+    left: -67px;
+  }
+}
+
+/* line 183, src/sass/components/_form.scss */
+.data-input__color-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  margin-left: 62px;
+  cursor: pointer;
+}
+
+/* line 190, src/sass/components/_form.scss */
+.data-input__color-label:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+/* line 193, src/sass/components/_form.scss */
+.data-input__color-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000000;
+  left: -63px;
+}
+
+/* line 202, src/sass/components/_form.scss */
+.data-input__color-label::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 22px;
+  height: 10px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: -53px;
+  top: 10px;
+}
+
+/* line 217, src/sass/components/_form.scss */
+.data-input__color:checked + .data-input__color-label::after {
+  display: block;
+}
+
+@media (min-width: 960px) {
+  /* line 222, src/sass/components/_form.scss */
+  .form__wrapper-color {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 227, src/sass/components/_form.scss */
+  .data-input__color-label {
+    font-size: 19px;
+    margin-left: 81px;
+    width: 170px;
+    height: 52px;
+    margin-bottom: 0px;
+  }
+  /* line 234, src/sass/components/_form.scss */
+  .data-input__color-label:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  /* line 238, src/sass/components/_form.scss */
+  .data-input__color-label:nth-child(-n+3) {
+    margin-bottom: 24px;
+  }
+  /* line 243, src/sass/components/_form.scss */
+  .data-input__color-label::before {
+    width: 54px;
+    height: 52px;
+    left: -84px;
+  }
+  /* line 248, src/sass/components/_form.scss */
+  .data-input__color-label::after {
+    width: 32px;
+    height: 15px;
+    left: -71px;
+    top: 11px;
+  }
 }
 
 /* line 1, src/sass/components/_catalog.scss */

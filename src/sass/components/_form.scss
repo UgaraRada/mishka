@@ -2,14 +2,72 @@
   outline: 4px solid green;
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 @media #{$desktop-width} {
   .form__wrapper {
-    outline: none;
-    width: 100%;
-    margin: auto;
+    position: relative;
+    width: 770px;
+    margin-left: 175px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
+}
+
+//form-common
+.main-form__input-data {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.main-form__input-data legend {
+  // margin-bottom: 25px;
+}
+.main-form legend {
+  @include gren_uppercase_text();
+  margin-bottom: 23px;
+  position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #56c3b2;
+      width: 198px;
+      height: 1px;
+      top: 12px;
+      right: 0;
+    }
+
+  @media #{$desktop-width} {
+    position: absolute;
+    left: -115px;
+    top: 60px;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.data-input__type,
+.data-input__color {
+  display: none;
+}
+
+.data-input__type-label,
+.data-input__color-label,
+.data-input__full-name-label {
+  @include text_form();
+}
+
+.data-input__full-name,
+.data-input__phone,
+.data-input__e-mail,
+.data-input__wishes {
+  font-size: 19px;
+  line-height: 18px;
 }
 
 
@@ -57,7 +115,11 @@
 }
 
 @media #{$desktop-width} {
-  
+  .main-form__instruction {
+  display: block;
+  width: 700px;
+  font-size: 17px;
+  }
 }
 
 
@@ -78,45 +140,116 @@
       display: block;
       width: 40px;
       height: 40px;
-      border: 1px solid $black;
-      border-radius: 40px;
-    
+      border: 2px solid $black;
+      border-radius: 100px;
+      left: -63px;
   }
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-color: #56c3b2;
+      border-radius: 100px;
+      left: -50px;
+    }
   }
-//form-common
-.main-form__input-data {
-  border: none;
+.data-input__type:checked+.data-input__type-label::after {
+  display: block;
 }
 
-.main-form__input-data legend {
-  // margin-bottom: 25px;
-}
-.main-form legend {
-  @include gren_uppercase_text();
-}
-.main-form__input-data label {
-  
-} 
+@media #{$desktop-width} {
+  .data-input__type-label {
+    height: 54px;
+    font-size: 19px;
+    margin-left: 81px;
 
-.data-input__type,
-.data-input__color {
-  display: none;
-}
-
-.data-input__type-label,
-.data-input__color-label,
-.data-input__full-name-label {
-  @include text_form();
-}
-
-.data-input__full-name,
-.data-input__phone,
-.data-input__e-mail,
-.data-input__wishes {
-  font-size: 19px;
-  line-height: 18px;
+    &::before {
+      width: 50px;
+      height: 50px;
+      left: -83px;
+  }
+    &::after {
+      width: 21px;
+      height: 21px;
+      left: -67px;
+    }
+  }
 }
 
 
+//data-input__color
+.data-input__color-label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 40px;
+  margin-left: 62px;
+  cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $black;
+      left: -63px;
+  }
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 22px;
+      height: 10px;
+      border-left: 2px solid #000;
+      border-bottom: 2px solid #000;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      left: -53px;
+      top: 10px;
+    }
+}
+
+.data-input__color:checked+.data-input__color-label::after {
+  display: block;
+}
+
+@media #{$desktop-width} {
+  .form__wrapper-color {
+    display: flex; 
+    flex-wrap: wrap;
+  }
+
+  .data-input__color-label {
+    font-size: 19px;
+    margin-left: 81px;
+    width: 170px;
+    height: 52px;
+    margin-bottom: 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+      &:nth-child(-n+3) {
+      margin-bottom: 24px;
+    }
 
 
+      &::before {
+        width: 54px;
+        height: 52px;
+        left: -84px;
+      }
+      &::after {
+        width: 32px;
+        height: 15px;
+        left: -71px;
+        top: 11px;
+      }
+  }
+}
