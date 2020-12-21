@@ -22,7 +22,11 @@
   padding: 0;
   border: none;
 }
-
+@media #{$desktop-width-only} {
+  .main-form__input-data--grey {
+    background-color: $light-grey;
+  }
+} 
 .main-form__input-data legend {
   // margin-bottom: 25px;
 }
@@ -253,3 +257,16 @@
       }
   }
 }
+
+//data-input__full-name
+.data-input__full-name {
+  box-sizing: border-box;
+  height: 52px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+}
+
+
+
