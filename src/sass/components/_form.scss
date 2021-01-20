@@ -116,6 +116,7 @@
   min-height: 180px;
   background-color: $background-block;
   margin-bottom: 30px;
+  border-top: 1px solid $light-grey;
 }
 .form-topic__title {
   @include section__title();
@@ -379,6 +380,7 @@
 .form-block-btn {
   background-color: white;
   width: 100%;
+  cursor: pointer;
 }
 
 @media #{$desktop-width} {

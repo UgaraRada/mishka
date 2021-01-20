@@ -36,11 +36,11 @@
     }
 
     @media #{$mobile-width-only} {
-      max-width: 959px;
+      max-width: 459px;
     }
 
     @media #{$desktop-width-only} {
-      min-width: 960px;
+      min-width: 460px;
     }
 }
 

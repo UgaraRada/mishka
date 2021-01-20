@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <title>Document</title>
   <link href="/css/main.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo disabled" href="#"></a>
+      <a class="page-header__logo disabled" href="http://localhost:3000/#"></a>
       <nav class="main-nav">
         <input type="checkbox" class="main-nav__toggler" id="togler" />
         <label class="main-nav__toggler-label" for="togler"></label>
@@ -28,13 +28,23 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <button type="button" class="btn-search">
-              Поиск по сайту
-            </button>
+            <a class="main-nav__link">
+              <div class="main-nav__svg-wrapper main-nav__svg-wrapper--search">
+                <svg class="main-nav__svg main-nav__svg--search" width="18" height="18">
+                  <use xlink:href="sprite.svg#icon-search" />
+                </svg>
+                Поиск по сайту
+              </div>
+            </a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">
-              Корзина: пока пуста
+              <div class="main-nav__svg-wrapper main-nav__svg-wrapper--basket">
+                <svg class="main-nav__svg main-nav__svg--basket" width="21" height="18">
+                  <use xlink:href="sprite.svg#icon-basket" />
+                </svg>
+                Корзина: пока пуста
+              </div>
             </a>
           </li>
         </ul>

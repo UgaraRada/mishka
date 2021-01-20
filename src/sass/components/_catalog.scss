@@ -21,6 +21,7 @@
   min-height: 180px;
   background-color: $background-block;
   margin-bottom: 30px;
+  border-top: 1px solid $light-grey;
 }
 .catalog-topic__title {
   @include section__title();
@@ -132,16 +133,25 @@
   .catalog-products__item-picture--1 {
     background-image: url(../../imgs/photo-1-desktop@1x.jpg);
     background-repeat: no-repeat;
+    @media #{$retina} {
+      background-image: url(../../imgs/photo-1-desktop@2x.jpg);
+    }
   }
   
   .catalog-products__item-picture--2 {
     background-image: url(../../imgs/photo-2-desktop@1x.jpg);
     background-repeat: no-repeat;
+    @media #{$retina} {
+      background-image: url(../../imgs/photo-2-desktop@2x.jpg);
+    }
   }
   
   .catalog-products__item-picture--3 {
     background-image: url(../../imgs/photo-3-desktop@1x.jpg);
     background-repeat: no-repeat;
+    @media #{$retina} {
+      background-image: url(../../imgs/photo-3-desktop@2x.jpg);
+    }
   }
 
   .catalog-products__item-descr-title {
@@ -237,6 +247,10 @@
     width: 682px;
     height: 455px;
     background-image: url(../../imgs/video-desktop@1x.jpg);
+    @media #{$retina} {
+      background-image: url(../../imgs/video-desktop@2x.jpg);
+      background-size: 628px auto;
+    }
   }
 
   .production-process__descr {

@@ -5,8 +5,11 @@ $light-grey: #ececec;
 $light-green: #63d1bb;
 $dark-green: #56c3b2;
 $background-block: #f1f1f1;
+$icon-color: #d5d5d5;
 
-$mobile-width-only: "(max-width: 959px)";
-$desktop-width-only: "(min-width: 960px)";
+$mobile-width-only: "(max-width: 459px)";
+$desktop-width-only: "(min-width: 460px)";
 $tablet-width: "(min-width: 768px)";
-$desktop-width: "(min-width: 960px)";
+$desktop-width: "(min-width: 460px)";
+$retina: "(min-resolution:144dpi),
+    (min-resolution:1.5dppx)";
