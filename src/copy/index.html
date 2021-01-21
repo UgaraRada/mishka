@@ -12,7 +12,7 @@
 <body class="index">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo disabled" ></a>
+      <a class="page-header__logo disabled"></a>
       <nav class="main-nav">
         <input type="checkbox" class="main-nav__toggler" id="togler" />
         <label class="main-nav__toggler-label" for="togler"></label>
@@ -136,7 +136,7 @@
       </div>
     </section>
     <section class="container reviews">
-      <div class="index__wrapper">
+      <div class="index__wrapper ">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__slider">
           <blockquote class="reviews__item">
@@ -150,8 +150,18 @@
             </cite>
             <a class="reviews__author-page" href="#">@misssssiskras</a>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="reviews__control">
+            <button class="reviews__control-btn reviews__control-btn--left" type="button">
+              <svg class="reviews__svg reviews__svg--left" width="50" height="26">
+                <use xlink:href="sprite.svg#icon-left-arrow"/>
+              </svg>
+            </button>
+            <button class="reviews__control-btn reviews__control-btn--right" type="button">
+              <svg class="reviews__svg reviews__svg--left" width="50" height="26">
+                <use xlink:href="sprite.svg#icon-right-arrow"/>
+              </svg>
+            </button>
+          </div>
         </div>
         <a class="reviews__write btn" href="#">Написать</a>
       </div>
@@ -178,24 +188,34 @@
 
   <footer class="page-footer">
     <div class="container footer__container">
-      <a class="page-footer__logo" href="#">
-        <img src="../imgs/logo-footer.svg" width="102" height="34" alt="mishka">
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__svg" width="102" height="34">
+          <use xlink:href="sprite.svg#logo-footer"/>
+        </svg>
       </a>
       <div class="social-links">
         <a class="social-link" href="#">
-          <img class="social-link--in" src="../imgs/icon-insta.svg" width="22" height="21" alt="Наш Instagram">
+          <svg class="social__svg social__svg--insta" width="22" height="22">
+            <use xlink:href="sprite.svg#icon-insta"/>
+          </svg>
         </a>
         <a class="social-link" href="#">
-          <img class="social-link--fb" src="../imgs/icon-fb.svg" width="15" height="29" alt="Наш Facebook">
+          <svg class="social__svg social__svg--fb" width="15" height="28">
+            <use xlink:href="sprite.svg#icon-fb"/>
+          </svg>
         </a>
         <a class="social-link" href="#">
-          <img class="social-link--tw" src="../imgs/icon-twitter.svg" width="24" height="20" alt="Наш Twitter">
+          <svg class="social__svg social__svg--twitter" width="24" height="21">
+            <use xlink:href="sprite.svg#icon-twitter"/>
+          </svg>
         </a>
       </div>
       <div class="page-footer__copyright">
         <span>Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
-          <img src="../imgs/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          <svg class="page-footer__svg page-footer__svg--logo-htmlacad" width="27" height="34">
+            <use xlink:href="sprite.svg#icon-logo-htmlacademy"/>
+          </svg>
         </a>
       </div>
     </div>
